@@ -1,0 +1,69 @@
+.instruction{
+    display: flex;
+    width: 100%;
+}
+
+.instruction_wrapper{
+    display: flex;
+    align-items: center;
+    width: 80%;
+    margin: 0 auto;
+    gap: 70px;
+}
+
+.instructions{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.instruction_card{
+    display: flex;  
+    width: 510px;
+    border: 1px solid #FFF;
+    border-radius: 50px;
+    background-color: #FFF;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 20px;
+    padding-right: 20px;
+    gap: 5px;
+}
+
+.card_text{
+    display: flex;
+    font-family: $font;
+    font-size: 17px;
+    font-weight: medium;
+    color: #001723;
+}
+
+.other_text{
+    font-family: $font;
+    color: #4D5D65;
+    font-size: 18px;
+    margin-left: 20px;
+}
+
+.instruction_img{
+    width: 716px;
+}
+
+.instruction_pretitle{
+    font-family: $font;
+    color: #2CBA4B;
+    font-size: 20px;
+    font-weight: medium;
+}
+
+.instruction_title{
+    color: #001723;
+    font-family: $font;
+    font-weight: bold;
+    font-size: 50px;
+}
+
+.title_img{
+    width: 35px;
+    height: 70px;
+}

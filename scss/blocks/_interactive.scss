@@ -1,0 +1,31 @@
+.interective{
+    display: flex;
+    width: 100%;
+    background-color: #001405;
+    height: 414px;
+}
+
+.interactive_wrapper{
+    display: flex;
+    align-items: center;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.interactive_title{
+    position: absolute;
+    font-family: $font;
+    font-weight: bold;
+    font-size: 55px;
+    color: #FFF;
+}
+
+.green{
+    color: #2CBA4B;
+}
+
+.interactive_phone{
+    display: flex;
+    position: absolute;
+    right: 0;
+}

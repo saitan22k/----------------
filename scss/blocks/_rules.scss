@@ -1,0 +1,95 @@
+.important{
+    display: flex;
+    width: 100%;
+    padding-bottom: 189px;
+}
+
+.important_wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.info{
+    display: flex;
+    flex-direction: column;
+    padding-top: 133px;
+}
+
+.important_title{
+    color: #001723;
+    font-family: $font;
+    font-weight: bold;
+    font-size: 56px;
+}
+
+.important_text{
+    font-family: $font;
+    color: #4D5D65;
+    font-size: 14px;
+}
+
+.danger_icon{
+    width: 45px;
+    height: 70px;
+}
+
+.rules{
+    display: flex;
+    flex-direction: column;
+    width: 37%;
+}
+
+.rules{
+    display: flex;
+    flex-direction: column;
+    padding-top: 98px;
+}
+
+.rule{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-bottom: solid 2px #E1E1E1;
+    padding-bottom: 15px;
+    padding-top: 15px;
+    gap: 15px;
+    width: 490px;
+}
+
+.rule_text{
+    font-family: $font;
+    color: #4D5D65;
+    font-size: 13px;
+    width: 300px;
+    
+}
+
+.rule_title{
+    display: flex;
+    width: 250px;
+    font-family: $font;
+    color: #001723;
+    font-size: 18px;
+    gap: 4px;
+}
+
+.rule_title2{
+    display: flex;
+    width: 250px;
+    font-family: $font;
+    color: #001723;
+    font-size: 18px;
+}
+
+.rule_icon{
+    width: 20px;
+    height: 20px;
+}
+
+.rule_icon2{
+    width: 30px;
+    height: 30px;
+}

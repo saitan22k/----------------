@@ -1,0 +1,128 @@
+.header{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+}
+
+.header_wrapper{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 80%;
+    justify-content: space-between;
+    margin: 0 auto;
+    padding-top: 15px;
+}
+
+.header_left{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 70%;
+    align-items: center;
+}
+
+.header_right{
+    display: flex;
+    width: 20%;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav{
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    font-size: 14px;
+}
+
+.logo{
+    width: 80px;
+    height: 36px;
+}
+
+.btn_download{
+    font-family: $font;
+    font-size: 14px;
+    font-weight: 400;
+    color: #00AA25;
+    border: 1px solid #00AA25;
+    border-radius: 50px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-left: 10px;
+    padding-right: 10px;
+
+    transform: background-color 3s ease-in;
+    transform: color 3s ease-in;
+    transform: border 3s ease-in;
+
+    &:hover{
+        background-color: #00AA25;
+        color: #FFF;
+        border: none;
+    }
+}
+
+.left_nav{
+    display: flex;
+    color: #4D5D65;
+    border: 1px solid #d4d7d8;
+    border-radius: 50px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    padding-left: 6px;
+    padding-right: 6px;
+}
+
+.right_nav{
+    display: flex;
+    margin: auto;
+    gap: 20px;
+}
+
+.btn_nav{
+    font-family: $font;
+    border-radius: 50px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    padding-left: 4px;
+    padding-right: 4px;
+
+    transition: border 4s ease-in;
+    transition: background-color 3ms ease-in-out;
+
+    &:hover{
+        border: 1px solid;
+        border-radius: 50px;
+        background-color: rgba($color: #4d5d65, $alpha: 0.1);
+    }
+}
+
+.header_link{
+    font-family: $font;
+    color: #4D5D65;
+}
+
+.right_nav .header_link {
+    display: inline-block;
+    color: #4D5D65; /* Цвет обычной ссылки */
+    line-height: 1;
+    text-decoration: none; /* Убираем подчеркивание */
+    cursor: pointer;
+}
+.right_nav .header_link:after {
+    background-color: #00AA25; /* Цвет линии при наведении на нее курсора мыши */
+    display: block;
+    content: "";
+    height: 2px; /* Высота линии */
+    width: 0%;
+    -webkit-transition: width .3s ease-in-out;
+    -moz--transition: width .3s ease-in-out;
+    transition: width .3s ease-in-out;
+}
+.right_nav .header_link:hover:after,
+.right_nav .header_link:focus:after {
+    width: 100%;
+}
