@@ -476,6 +476,7 @@ body {
   display: flex;
   flex-direction: column;
   padding-top: 98px;
+  margin-right: 150px;
 }
 
 .rule {
