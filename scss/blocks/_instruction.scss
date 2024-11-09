@@ -28,6 +28,10 @@
     padding-left: 20px;
     padding-right: 20px;
     gap: 5px;
+
+    @media screen and (max-width: 1301px) {
+        width: 410px;
+    }
 }
 
 .card_text{
@@ -36,6 +40,10 @@
     font-size: 17px;
     font-weight: medium;
     color: #001723;
+
+    @media screen and (max-width: 1301px) {
+        font-size: 14px;
+    }
 }
 
 .other_text{
@@ -47,6 +55,10 @@
 
 .instruction_img{
     width: 716px;
+
+    @media screen and (max-width: 1301px) {
+        width: 550px;
+    }
 }
 
 .instruction_pretitle{
@@ -54,6 +66,10 @@
     color: #2CBA4B;
     font-size: 20px;
     font-weight: medium;
+
+    @media screen and (max-width: 1301px) {
+        font-size: 17px;
+    }
 }
 
 .instruction_title{
@@ -61,9 +77,18 @@
     font-family: $font;
     font-weight: bold;
     font-size: 50px;
+
+    @media screen and (max-width: 1301px) {
+        font-size: 40px;
+    }
 }
 
 .title_img{
     width: 35px;
     height: 70px;
+
+    @media screen and (max-width: 1301px) {
+        width: 30px;
+        height: 60px;
+    }
 }

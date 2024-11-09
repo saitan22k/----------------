@@ -10,6 +10,10 @@
     justify-content: space-between;
     width: 80%;
     margin: 0 auto;
+
+    @media screen and (max-width: 1301px) {
+        flex-direction: column;
+    }
 }
 
 .info{
@@ -23,23 +27,42 @@
     font-family: $font;
     font-weight: bold;
     font-size: 56px;
+
+    @media screen and (max-width: 1301px) {
+        font-size: 65px;
+        text-align: center;
+    }
 }
 
 .important_text{
     font-family: $font;
     color: #4D5D65;
     font-size: 14px;
+
+    @media screen and (max-width: 1301px) {
+        font-size: 18px;
+        text-align: center;
+    }
 }
 
 .danger_icon{
     width: 45px;
     height: 70px;
+
+    @media screen and (max-width: 1301px) {
+        display: none;
+    }
 }
 
 .rules{
     display: flex;
     flex-direction: column;
     width: 37%;
+
+    @media screen and (max-width: 1301px) {
+        flex-direction: row;
+        
+    }
 }
 
 .rules{
@@ -47,6 +70,12 @@
     flex-direction: column;
     padding-top: 98px;
     margin-right: 150px;
+
+    @media screen and (max-width: 1301px) {
+        flex-direction: row;
+        // margin: 0 auto;
+        margin-right: 80%;
+    }
 }
 
 .rule{
@@ -58,6 +87,14 @@
     padding-top: 15px;
     gap: 15px;
     width: 490px;
+
+    @media screen and (max-width: 1301px) {
+        width: 400px;
+        border-bottom: none;
+        border-right: solid 1px #E1E1E1;
+        border-left: solid 1px #E1E1E1;
+        gap: none;
+    }
 }
 
 .rule_text{
@@ -66,6 +103,9 @@
     font-size: 13px;
     width: 300px;
     
+    @media screen and (max-width: 1301px) {
+        font-size: 16px;
+    }
 }
 
 .rule_title{
@@ -75,6 +115,10 @@
     color: #001723;
     font-size: 18px;
     gap: 4px;
+
+    @media screen and (max-width: 1301px) {
+        font-size: 24px;
+    }
 }
 
 .rule_title2{
@@ -83,6 +127,10 @@
     font-family: $font;
     color: #001723;
     font-size: 18px;
+
+    @media screen and (max-width: 1301px) {
+        font-size: 24px;
+    }
 }
 
 .rule_icon{

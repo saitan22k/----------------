@@ -17,18 +17,22 @@
     display: flex;
     flex-direction: column;
     gap: 10px;
+
+    @media screen and (max-width: 1615px) {
+        // text-align: center;
+    }
 }
 
 .title{
     font-family: $font;
-    font-size: 58px;
+    font-size: 65px;
     font-weight: bold;
     color: black;
 }
 
 .title_green{
     font-family: $font;
-    font-size: 58px;
+    font-size: 65px;
     font-weight: bold;
     color: #2CBA4B;
     padding-left: 10px;
@@ -39,12 +43,20 @@
     font-size: 14px;
     color: #4D5D65;
     line-height: 19px;
+
+    @media screen and (max-width: 1615px) {
+        // display: none;
+    }
 }
 
 .circle{
     position: absolute;
     margin-right: 70px;
     margin-top: 10px;
+
+    @media screen and (max-width: 1615px) {
+        // display: none;
+    }
 }
 
 .book_btn{
@@ -75,6 +87,10 @@
     flex-direction: row;
     padding-top: 70px;
     gap: 16px;
+
+    @media screen and (max-width: 1615px) {
+        // margin: 0 auto;
+    }
 }
 
 .benefits_cards{
@@ -106,6 +122,10 @@
     height: 507px;
     right: 0;
     margin-right: 190px;
+
+    @media screen and (max-width: 1615px) {
+        // display: none;
+    }
 }
 
 

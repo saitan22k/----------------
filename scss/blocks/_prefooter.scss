@@ -1,8 +1,9 @@
 .prefooter{
     display: flex;
     width: 100%;
-    background-color: #001405;
+    background-image: url(/img/footer/Group\ 338926.png);
     border-bottom:solid 2px rgba($color: #838C86, $alpha: 0.5);
+    position: relative;
 }
 
 .prefooter_wrapper{
@@ -41,7 +42,7 @@
     display: flex;
     font-family: $font;
     font-size: 17px;
-    font-weight: 400;
+    font-weight: 300;
     background-color: #00AA25;
     color: #FFF;
     border-radius: 50px;

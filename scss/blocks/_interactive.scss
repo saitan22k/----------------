@@ -10,6 +10,10 @@
     align-items: center;
     width: 80%;
     margin: 0 auto;
+
+    @media screen and (max-width: 1301px) {
+        align-items: center;
+    }
 }
 
 .interactive_title{
@@ -18,14 +22,25 @@
     font-weight: bold;
     font-size: 55px;
     color: #FFF;
+
+    @media screen and (max-width: 1301px) {
+        font-size: 40px;
+    }
 }
 
 .green{
-    color: #2CBA4B;
+    color: #2CBA4B; 
 }
 
 .interactive_phone{
     display: flex;
     position: absolute;
     right: 0;
+
+    @media screen and (max-width: 1301px) {
+        width: 800px;
+        height: 414px;
+        margin-left: 15px;
+        display: inline-block;
+    }
 }

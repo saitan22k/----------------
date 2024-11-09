@@ -115,12 +115,31 @@ body {
   width: 70%;
   align-items: center;
 }
+@media screen and (max-width: 1000px) {
+  .header_left {
+    width: 60%;
+  }
+}
 
 .header_right {
   display: flex;
   width: 20%;
   align-items: center;
   justify-content: center;
+}
+@media screen and (max-width: 1000px) {
+  .header_right {
+    display: none;
+  }
+}
+
+.header_nav-btn {
+  display: none;
+}
+@media screen and (max-width: 1000px) {
+  .header_nav-btn {
+    display: block;
+  }
 }
 
 .nav {
@@ -172,6 +191,11 @@ body {
   margin: auto;
   gap: 20px;
 }
+@media screen and (max-width: 1000px) {
+  .right_nav {
+    display: none;
+  }
+}
 
 .btn_nav {
   font-family: "SF Pro Display", sans-serif;
@@ -218,6 +242,66 @@ body {
   width: 100%;
 }
 
+/* Nav Icon */
+.nav-icon-btn {
+  --time: 0.1s;
+  --width: 40px;
+  --height: 30px;
+  --line-height: 1px;
+  --line-margin: 2px;
+  --color: green;
+  height: var(--height);
+  width: var(--width);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav-icon {
+  position: relative;
+  width: var(--width);
+  height: var(--line-height);
+  background-color: var(--color);
+}
+
+.nav-icon::before,
+.nav-icon::after {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 0;
+  width: var(--width);
+  height: var(--line-height);
+  background-color: var(--color);
+  transition: transform var(--time) ease-in, top var(--time) linear var(--time);
+}
+
+.nav-icon::before {
+  top: calc(var(--line-height) * -8);
+}
+
+.nav-icon::after {
+  top: calc(var(--line-height) * 8);
+}
+
+.nav-icon.nav-icon--active {
+  background-color: transparent;
+}
+
+.nav-icon.nav-icon--active::before,
+.nav-icon.nav-icon--active::after {
+  top: 0;
+  transition: top var(--time) linear, transform var(--time) ease-in var(--time);
+}
+
+.nav-icon.nav-icon--active::before {
+  transform: rotate(45deg);
+}
+
+.nav-icon.nav-icon--active::after {
+  transform: rotate(-45deg);
+}
+
 .preview {
   display: flex;
   width: 100%;
@@ -238,17 +322,16 @@ body {
   flex-direction: column;
   gap: 10px;
 }
-
 .title {
   font-family: "SF Pro Display", sans-serif;
-  font-size: 58px;
+  font-size: 65px;
   font-weight: bold;
   color: black;
 }
 
 .title_green {
   font-family: "SF Pro Display", sans-serif;
-  font-size: 58px;
+  font-size: 65px;
   font-weight: bold;
   color: #2CBA4B;
   padding-left: 10px;
@@ -260,13 +343,11 @@ body {
   color: #4D5D65;
   line-height: 19px;
 }
-
 .circle {
   position: absolute;
   margin-right: 70px;
   margin-top: 10px;
 }
-
 .book_btn {
   font-family: "SF Pro Display", sans-serif;
   font-size: 14px;
@@ -294,7 +375,6 @@ body {
   padding-top: 70px;
   gap: 16px;
 }
-
 .benefits_cards {
   display: flex;
   flex-direction: column;
@@ -325,7 +405,6 @@ body {
   right: 0;
   margin-right: 190px;
 }
-
 .interective {
   display: flex;
   width: 100%;
@@ -339,6 +418,11 @@ body {
   width: 80%;
   margin: 0 auto;
 }
+@media screen and (max-width: 1301px) {
+  .interactive_wrapper {
+    align-items: center;
+  }
+}
 
 .interactive_title {
   position: absolute;
@@ -346,6 +430,11 @@ body {
   font-weight: bold;
   font-size: 55px;
   color: #FFF;
+}
+@media screen and (max-width: 1301px) {
+  .interactive_title {
+    font-size: 40px;
+  }
 }
 
 .green {
@@ -356,6 +445,14 @@ body {
   display: flex;
   position: absolute;
   right: 0;
+}
+@media screen and (max-width: 1301px) {
+  .interactive_phone {
+    width: 800px;
+    height: 414px;
+    margin-left: 15px;
+    display: inline-block;
+  }
 }
 
 .instruction {
@@ -389,6 +486,11 @@ body {
   padding-right: 20px;
   gap: 5px;
 }
+@media screen and (max-width: 1301px) {
+  .instruction_card {
+    width: 410px;
+  }
+}
 
 .card_text {
   display: flex;
@@ -396,6 +498,11 @@ body {
   font-size: 17px;
   font-weight: medium;
   color: #001723;
+}
+@media screen and (max-width: 1301px) {
+  .card_text {
+    font-size: 14px;
+  }
 }
 
 .other_text {
@@ -408,12 +515,22 @@ body {
 .instruction_img {
   width: 716px;
 }
+@media screen and (max-width: 1301px) {
+  .instruction_img {
+    width: 550px;
+  }
+}
 
 .instruction_pretitle {
   font-family: "SF Pro Display", sans-serif;
   color: #2CBA4B;
   font-size: 20px;
   font-weight: medium;
+}
+@media screen and (max-width: 1301px) {
+  .instruction_pretitle {
+    font-size: 17px;
+  }
 }
 
 .instruction_title {
@@ -422,10 +539,21 @@ body {
   font-weight: bold;
   font-size: 50px;
 }
+@media screen and (max-width: 1301px) {
+  .instruction_title {
+    font-size: 40px;
+  }
+}
 
 .title_img {
   width: 35px;
   height: 70px;
+}
+@media screen and (max-width: 1301px) {
+  .title_img {
+    width: 30px;
+    height: 60px;
+  }
 }
 
 .important {
@@ -441,6 +569,11 @@ body {
   width: 80%;
   margin: 0 auto;
 }
+@media screen and (max-width: 1301px) {
+  .important_wrapper {
+    flex-direction: column;
+  }
+}
 
 .info {
   display: flex;
@@ -454,16 +587,33 @@ body {
   font-weight: bold;
   font-size: 56px;
 }
+@media screen and (max-width: 1301px) {
+  .important_title {
+    font-size: 65px;
+    text-align: center;
+  }
+}
 
 .important_text {
   font-family: "SF Pro Display", sans-serif;
   color: #4D5D65;
   font-size: 14px;
 }
+@media screen and (max-width: 1301px) {
+  .important_text {
+    font-size: 18px;
+    text-align: center;
+  }
+}
 
 .danger_icon {
   width: 45px;
   height: 70px;
+}
+@media screen and (max-width: 1301px) {
+  .danger_icon {
+    display: none;
+  }
 }
 
 .rules {
@@ -471,12 +621,23 @@ body {
   flex-direction: column;
   width: 37%;
 }
+@media screen and (max-width: 1301px) {
+  .rules {
+    flex-direction: row;
+  }
+}
 
 .rules {
   display: flex;
   flex-direction: column;
   padding-top: 98px;
   margin-right: 150px;
+}
+@media screen and (max-width: 1301px) {
+  .rules {
+    flex-direction: row;
+    margin-right: 80%;
+  }
 }
 
 .rule {
@@ -489,12 +650,26 @@ body {
   gap: 15px;
   width: 490px;
 }
+@media screen and (max-width: 1301px) {
+  .rule {
+    width: 400px;
+    border-bottom: none;
+    border-right: solid 1px #E1E1E1;
+    border-left: solid 1px #E1E1E1;
+    gap: none;
+  }
+}
 
 .rule_text {
   font-family: "SF Pro Display", sans-serif;
   color: #4D5D65;
   font-size: 13px;
   width: 300px;
+}
+@media screen and (max-width: 1301px) {
+  .rule_text {
+    font-size: 16px;
+  }
 }
 
 .rule_title {
@@ -505,6 +680,11 @@ body {
   font-size: 18px;
   gap: 4px;
 }
+@media screen and (max-width: 1301px) {
+  .rule_title {
+    font-size: 24px;
+  }
+}
 
 .rule_title2 {
   display: flex;
@@ -512,6 +692,11 @@ body {
   font-family: "SF Pro Display", sans-serif;
   color: #001723;
   font-size: 18px;
+}
+@media screen and (max-width: 1301px) {
+  .rule_title2 {
+    font-size: 24px;
+  }
 }
 
 .rule_icon {
@@ -527,8 +712,9 @@ body {
 .prefooter {
   display: flex;
   width: 100%;
-  background-color: #001405;
+  background-image: url(/img/footer/Group\ 338926.png);
   border-bottom: solid 2px rgba(131, 140, 134, 0.5);
+  position: relative;
 }
 
 .prefooter_wrapper {
@@ -567,7 +753,7 @@ body {
   display: flex;
   font-family: "SF Pro Display", sans-serif;
   font-size: 17px;
-  font-weight: 400;
+  font-weight: 300;
   background-color: #00AA25;
   color: #FFF;
   border-radius: 50px;
